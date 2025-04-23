@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind CSS</title>
+    <link rel="stylesheet" href="./output.css" />
+  </head>
+  <body class="m-8 h-[2000px]">
+    <button
+      class="bg-blue-400 hover:bg-blue-200 active:bg-blue-300 text-blue-950 border-2 border-blue-200 rounded-md py-2 px-4"
+    >
+      Comprar Produto
+    </button>
+
+    <input
+      class="border-2 border-gray-200 bg-gray-100 rounded-md p-2 focus:outline-yellow-400"
+      type="text"
+    />
+    <button
+      class="bg-blue-400 hover:bg-blue-200 active:bg-blue-300 text-blue-950 border-2 border-blue-200 rounded-md py-2 px-4 hover:disabled:bg-blue-400 disabled:grayscale disabled:opacity-50"
+      disabled
+    >
+      Enviar
+    </button>
+
+    <!-- O código abaixo fará mais sentido quando utilizamos JavaScript ou Back End para gerar o conteúdo através de um Loop, onde não sabemos exatamente qual o primeiro/último elemento -->
+    <ol class="list-decimal m-4">
+      <li class="odd:bg-gray-200 first:text-green-600 last:text-red-600">
+        Marta
+      </li>
+      <li class="odd:bg-gray-200 first:text-green-600 last:text-red-600">
+        Nina
+      </li>
+      <li class="odd:bg-gray-200 first:text-green-600 last:text-red-600">
+        Maria
+      </li>
+      <li class="odd:bg-gray-200 first:text-green-600 last:text-red-600">
+        Mara
+      </li>
+      <li class="odd:bg-gray-200 first:text-green-600 last:text-red-600">
+        Mila
+      </li>
+    </ol>
+
+    <ol
+      class="list-decimal m-4 *:p-2 odd:*:bg-gray-200 last:*:text-red-600 first:*:text-green-600"
+    >
+      <li>Marta</li>
+      <li>Nina</li>
+      <li>Maria</li>
+      <li>Mara</li>
+      <li>Mila</li>
+    </ol>
+
+    <!-- https://tailwindcss.com/docs/hover-focus-and-other-states#pseudo-class-reference-->
+    <script></script>
+  </body>
+</html>
