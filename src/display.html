@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind CSS</title>
+    <link rel="stylesheet" href="./output.css" />
+  </head>
+  <body class="m-8">
+    <a href="#principal">Pular para conteudo </a>
+
+    <a href="/" class="bg-blue-200 py-2 px-5 inline-block">Contato</a>
+    <button id="menuButton" class="bg-blue-200 py-2 px-5 inline-block">
+      Menu
+    </button>
+    <button id="menuParagrafo" class="bg-blue-200 py-2 px-5 inline-block">
+      Ver Paragrafo
+    </button>
+    
+    <p id="paragrafo" class="invisible">Paragrafo</p>
+    <ul id="menu" class="">
+      <li>Produtos</li>
+      <li>Sobre</li>
+      <li>Contato</li>
+    </ul>
+    
+    <script>
+      menuButton?.addEventListener("click", () => {
+        menu?.classList.toggle("hidden");
+      });
+      menuParagrafo?.addEventListener("click", () => {
+        paragrafo?.classList.toggle("invisible");
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind CSS</title>
+    <link rel="stylesheet" href="./output.css" />
+  </head>
+  <body class="m-8">
+    <!-- FLEX -->
+    <!-- <ul class="flex flex-col gap-2 *:p-2 *:rounded *:text-center">
+      <li class="bg-orange-200 text-orange-800">HTML</li>
+      <li class="bg-lime-200 text-lime-800">CSS</li>
+      <li class="bg-yellow-200 text-yellow-800">JavaScript</li>
+      <li class="bg-blue-200 text-blue-800">React</li>
+      <li class="bg-violet-200 text-violet-800">PHP</li>
+    </ul> -->
+
+    
+    <!-- Align e Justify -->
+    <section
+      class="items-center justify-items-end h-96 grid grid-cols-2 gap-4 bg-[url('./img/grid.svg')]"
+    >
+      <div class="bg-violet-900 p-8 rounded">
+        <h2 class="font-bold mb-4 text-white">Plano Premium</h2>
+        <ul class="list-disc text-white">
+          <li>300 Acessos</li>
+          <li>1200 Requests</li>
+          <li>Suporte Vitalício</li>
+          <li>Acesso Completo</li>
+          <li>Proteção Total</li>
+        </ul>
+        <button class="bg-violet-200 text-violet-900 py-1 px-4 rounded mt-4">
+          Assinar Premium
+        </button>
+      </div>
+      <div class="bg-gray-200 p-8 rounded">
+        <h2 class="font-bold mb-4">Plano Básico</h2>
+        <ul class="list-disc">
+          <li>150 Acessos</li>
+          <li>500 Requests</li>
+        </ul>
+        <button class="bg-gray-300 text-gray-900 py-1 px-4 rounded mt-4">
+          Assinar Básico
+        </button>
+      </div>
+    </section>
+
+    <!-- Grid -->
+    <!-- <div class="grid grid-cols-2 *:bg-gray-300 *:p-4 gap-4 mb-4">
+      <div>Item 1</div>
+      <div>Item 2</div>
+      <div>Item 3</div>
+    </div>
+
+    <div class="grid grid-cols-[1fr_2fr_3fr] *:bg-gray-300 *:p-4 gap-4 mb-4">
+      <div>Item 1</div>
+      <div>Item 2</div>
+      <div>Item 3</div>
+    </div>
+
+    <div class="grid grid-cols-3 *:bg-gray-300 *:p-4 gap-4">
+      <div class="col-span-full">Item 1</div>
+      <div class="col-span-2">Item 2</div>
+      <div>Item 3</div>
+      <div>Item 4</div>
+    </div> -->
+
+    <!-- Valores Arbitrários -->
+    <!-- <style>
+      html {
+        --positivo: #2e0;
+      }
+    </style>
+
+    <h1 class="text-[#a8f] bg-black h-[calc(50vh-100px)]">Orgamid</h1>
+    <h1 class="text-[--positivo]">Orgamid</h1>
+    <div class="shadow-[0_2px_4px_2px_rgba(0,0,0,0.25)] p-4">
+      shadow-[0_2px_4px_2px_rgba(0,0,0,0.25)] p-4
+    </div> -->
+
+    <!-- Box Model-->
+    <!-- <div class="bg-gray-300 mb-8 mt-2">Normal</div>
+  <div class="bg-sky-900 w-16 h-24 mx-8 p-4 m-auto">Normal</div>
+  <div class="bg-yellow-300 size-36 border-4 w-1/2 m-4 ">Normals</div> -->
+  </body>
+</html>
